@@ -1,3 +1,7 @@
+# Sum
+
+This repository contains a solution to the Codeforces problem **"Sum"** (Problem 1742A). You can find the problem statement [here](https://codeforces.com/contest/1742/problem/A).
+
 ## Intuition
 
 The problem requires checking if any of the three given integers can be expressed as the sum of the other two. Since the integers are small (from 0 to 20), a direct comparison approach is efficient.
