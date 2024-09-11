@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class FairPlayoff {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(bf.readLine());
+        String[] skills;
+
+        for (int i = 0; i < n; i++) {
+            skills = bf.readLine().split("\\s+");
+
+            int skill0 = Integer.parseInt(skills[0]);
+            int skill1 = Integer.parseInt(skills[1]);
+            int skill2 = Integer.parseInt(skills[2]);
+            int skill3 = Integer.parseInt(skills[3]);
+
+            if ((((skill0 < skill2) || (skill0 < skill3)) && ((skill1 > skill2) || (skill1 > skill3))) ||
+                    (((skill0 > skill2) || (skill0 > skill3)) && ((skill1 < skill2) || (skill1 < skill3)))) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+}
