@@ -1,0 +1,26 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+ 
+public class Sum {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(bf.readLine());
+ 
+        String[] nums;
+        for (int i = 0; i < n; i++) {
+            nums = bf.readLine().split(" ");
+ 
+            int a = Integer.parseInt(nums[0]);
+            int b = Integer.parseInt(nums[1]);
+            int c = Integer.parseInt(nums[2]);
+ 
+            if (a + b == c || b + c == a || c + a == b) {
+                System.out.println("YES");
+            } else {
+                System.out.println("No");
+            }
+        }
+    }
+}
