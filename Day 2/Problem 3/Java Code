@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Word {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        String word = bf.readLine();
+        int uppercase = 0;
+        int lowercase = 0;
+
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) >= 65 && word.charAt(i) <= 90) {
+                uppercase++;
+            } else {
+                lowercase++;
+            }
+        }
+
+        if (uppercase > lowercase) {
+            System.out.println(word.toUpperCase());
+        } else {
+            System.out.println(word.toLowerCase());
+        }
+    }
+}
