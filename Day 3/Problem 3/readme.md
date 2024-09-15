@@ -13,7 +13,8 @@ The task is to determine how much money the soldier needs to borrow in order to 
 
 2. **Calculate Total Cost**:
    - The cost of the bananas follows an arithmetic progression: the first banana costs `k`, the second costs `2k`, and so on up to `wk` for the w-th banana.
-   - The total cost can be computed using the formula for the sum of the first `w` terms of an arithmetic progression: 
+   - The total cost can be computed using the formula for the sum of the first `w` terms of an arithmetic progression:
+
      \[
      \text{total cost} = k \times \left(\frac{w \times (w + 1)}{2}\right)
      \]
