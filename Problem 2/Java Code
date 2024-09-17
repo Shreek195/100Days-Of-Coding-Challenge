@@ -1,0 +1,13 @@
+import java.util.Scanner;
+ 
+public class VanyaAndFence {
+    public static void main(String[] args)  {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), h = sc.nextInt(), c = 0;
+        while (n-- > 0) {
+            c += sc.nextInt() > h ? 2 : 1;
+        }
+        System.out.println(c);
+ 
+    }
+}
